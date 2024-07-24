@@ -2,17 +2,17 @@
 import React from 'react';
 import { Page, Text, View, Document, StyleSheet, Image } from '@react-pdf/renderer';
 
-// Define your image path
+
 const image = '/image/BD8Rb_5f.jpg';
 
 const Pdf = () => (
   <Document>
-    <Page size="A4" style={styles.page}>
+    <Page size="A4" style={styles.page} wrap={false}>
       {/* Left Section */}
       <View style={styles.left}>
         <View style={styles.name}>
           <Text>GABIN STEEVEN Nguembi</Text>
-          <Text style={styles.rest}> JE EJE EJ EJ EJJE EJ EJ EJEJEEJEJEJEJE</Text>
+          <Text style={styles.rest}>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet</Text>
         </View>
         <View style={styles.violet}></View>
         <View style={styles.enbasdelabarreviolet}> <Text>Profil</Text>
@@ -38,10 +38,10 @@ Fusce efficitur magna vel nisl eleifend, in elementum purus pharetra. Phasellus 
         <View style={styles.lines}></View>
         <Text style={styles.info}>EXPERIENCES PERSONNELLES</Text>
         <View>
+        <View>
         <View style={styles.languageRight}> //languageLefts
             <Text style={styles.textsDesannee}>2018 - 2019 </Text>
         
-            <Text style={styles.annees}>2015 -  2017</Text>
           </View>
           <View style={styles.languageLefts}>
             <Text style={styles.donneExperience}>développement d " application web full-stack</Text>
@@ -58,6 +58,25 @@ Fusce efficitur magna vel nisl eleifend, in elementum purus pharetra. Phasellus 
             <Text style={styles.donneExperience}>développement d " application web full-stack</Text>
             <Text style={styles.donneExperience}> développement d " application web full-stack</Text>
            <Text  style={styles.donneExperience}> genie informatique option logiciiel</Text>
+          </View></View></View>
+        <View style={styles.languageRight}> //languageLefts
+            <Text style={styles.textsDesannee}>2018 - 2019 </Text>
+        
+          </View>
+          <View style={styles.languageLefts}>
+            <Text style={styles.donneExperience}>développement d " application web full-stack</Text>
+            <Text style={styles.donneExperience}>développement d " application web full-stack</Text>
+            <Text style={styles.donneExperience}> développement d " application web full-stack</Text>
+           <Text  style={styles.donneExperience}> genie informatique option logiciiel</Text>
+          </View>
+          <View>     <View style={styles.languageRight}> 
+            <Text style={styles.textsDesannee}>2018 - 2019 </Text>
+          </View>
+          <View style={styles.languageLefts}>
+            <Text style={styles.donneExperience}>développement d " application web full-stack</Text>
+            <Text style={styles.donneExperience}>développement d " application web full-stack</Text>
+            <Text style={styles.donneExperience}> développement d " application web full-stack</Text>
+           <Text  style={styles.donneExperience}> genie informatique option logiciiel</Text>
           </View></View>
         </View>
         <View style={styles.liness}></View>
@@ -65,10 +84,12 @@ Fusce efficitur magna vel nisl eleifend, in elementum purus pharetra. Phasellus 
         <View style={styles.view}>
         <View style={styles.textinleft}>
           <Text> 2012 - 2013</Text>
-           <Text> 2012 - 2015</Text>
+           <Text style={styles.textinlefts}> 2012 - 2015</Text>
         </View>
-        <View> <Text style={styles.textinright}> boulingui </Text>
-          <Text style={styles.textinright}> MOUNGUENGUI</Text></View>
+        <View> <View><Text style={styles.textinright}> boulingui </Text></View>
+        <View style={styles.positio}> <Text style={styles.textdelafin}>genie informatique option logiciiel</Text></View>
+          <Text  style={styles.textinrights}> boulingui</Text></View>
+          <View style={styles.positions}> <Text style={styles.textdelafin}>genie informatique option logiciiel</Text></View>
         </View>
         </View>
       
@@ -87,6 +108,7 @@ Fusce efficitur magna vel nisl eleifend, in elementum purus pharetra. Phasellus 
           <Text style={styles.text}>TÉLÉPHONE : <Text>+24177888664</Text></Text>
           <Text style={styles.text}>EMAIL : <Text>@gmail.com</Text></Text>
           <Text style={styles.text}>ADRESSE : <Text>cscs</Text></Text>
+          <Text style={styles.text}>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet</Text>
         </View>
 
         {/* Separator line */}
@@ -147,17 +169,68 @@ Fusce efficitur magna vel nisl eleifend, in elementum purus pharetra. Phasellus 
   </Document>
 );
 
-const SkillItem = ({ title }) => (
-  <View style={styles.skillContainer}>
-    <Text style={styles.competences}>{title}</Text>
-    <View style={styles.blueLine}></View>
-  </View>
-);
+const SkillItem = ({ title }) => {
+  return (
+    <View style={styles.skillContainer}>
+      <Text style={styles.competences}>{title}</Text>
+      <View style={styles.progressBar}>
+        <View style={[styles.progress, { width: '67%' }]}></View>
+        <View style={styles.circle}></View>
+      </View>
+    </View>
+  );
+};
 
 const styles = StyleSheet.create({
   page: {
     flexDirection: 'row',
     padding: 20,
+  },
+  positions:{
+    position:"absolute",
+    marginTop:72,
+    width:234,
+     marginLeft:85,
+  },
+  skillContainer: {
+    marginBottom: 10,
+    paddingHorizontal: 15,
+  },
+  competences: {
+    fontSize: 8,
+    fontWeight: 'bold',
+    marginBottom: 5,
+  },
+  progressBar: {
+    height: 4,
+    backgroundColor: '#e0e0e0',
+    borderRadius: 5,
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  progress: {
+    height: '100%',
+    backgroundColor: '#007bff',
+    borderTopLeftRadius: 5,
+    borderBottomLeftRadius: 5,
+  },
+  circle: {
+    width: 9,
+    height: 9,
+    borderRadius: 10,
+    backgroundColor: '#007bff',
+    marginLeft: -10,
+  },
+  positio:{
+    position:"absolute",
+    marginTop:12,
+    width:234,
+    marginLeft:18,
+  },
+  position:{
+    position:"absolute",
+    marginTop:12,
+    marginLeft:94,
   },
 view:{
    flexDirection:'row',
@@ -171,8 +244,7 @@ view:{
   
   lorem:{
     marginTop:6,
-    letterSpacing:1,
-    fontSize:6,
+    fontSize: 8,
   },
   enbasdelabarreviolet:{
     marginTop:23,
@@ -193,8 +265,19 @@ view:{
     fontSize:12,
      
   },
+  textinlefts:{
+    fontSize:12,
+    marginTop:43,
+     
+  },
   textinright:{
     fontSize:12,
+    marginLeft:23,
+
+  },
+  textinrights:{
+    fontSize:15,
+    marginTop:43,
     marginLeft:23,
 
   },
@@ -203,26 +286,27 @@ view:{
     fontSize: 8,
   },
   blueLine: {
-    width: '100%',
-    borderBottomWidth: 1,
-    borderBottomColor: 'blue',
-    marginTop: 2,
-    marginBottom: 6,
+    width: '60%',
+    position:'absolute',
+    borderBottomWidth: 3,
+    borderBottomColor: 'white',
+    marginTop: 3,
+    marginLeft:54,
   },
+  blueLines: {
+    width: '40%',
+    position:'absolute',
+    borderBottomWidth: 3,
+    borderBottomColor: 'blue',
+    marginTop: 3,
+    marginLeft:54,
+  },
+ 
   columnContainer: {
     flexDirection: 'column',
     marginTop: 8,
   },
-  skillContainer: {
-    marginBottom: 8,
-  },
-  competences: {
-    fontSize: 7,
-    backgroundColor: 'grey',
-    marginBottom: 2,
-    paddingTop: 2,
-    paddingLeft: 2,
-  },
+
   line: {
     marginTop: 8,
     width: '100%',
@@ -277,8 +361,15 @@ view:{
     marginTop: 5,
     fontSize: 8,
   },
+  textdelafin: {
+  display:'flex',
+    marginTop: 5,
+    margin:12,
+    fontSize: 8,
+  },
   text: {
     marginTop: 5,
+    margin:12,
     fontSize: 8,
   },
   infos: {
@@ -293,11 +384,12 @@ view:{
     fontSize: 8,
   },
   imagecontainer: {
+    marginLeft:35,
     borderWidth: 1,
     borderStyle: 'dotted',
     borderColor: 'black',
-    width: 43,
-    height: 53,
+    width: 83,
+    height: 100,
     alignSelf: 'center',
     marginBottom: 10,
   },
@@ -317,8 +409,8 @@ view:{
     paddingLeft: 10,
   },
   languageLeft: {
-    marginTop:12,
-    marginLeft:32,
+    marginTop:7,
+    marginLeft:2,
   },
   languageLefts: {
     marginTop:28,
