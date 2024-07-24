@@ -3,7 +3,7 @@ import React from 'react';
 import { Page, Text, View, Document, StyleSheet, Image } from '@react-pdf/renderer';
 
 
-const image = '/image/BD8Rb_5f.jpg';
+const image = '/image/IMG_0505_Original.jpg';
 
 const Pdf = () => (
   <Document>
@@ -11,7 +11,8 @@ const Pdf = () => (
       {/* Left Section */}
       <View style={styles.left}>
         <View style={styles.name}>
-          <Text>GABIN STEEVEN Nguembi</Text>
+          <Text>
+          Gloria Obone</Text>
           <Text style={styles.rest}>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet</Text>
         </View>
         <View style={styles.violet}></View>
@@ -106,7 +107,7 @@ Fusce efficitur magna vel nisl eleifend, in elementum purus pharetra. Phasellus 
         <View>
           <Text style={styles.info}>INFORMATIONS PERSONNELLES</Text>
           <Text style={styles.text}>TÉLÉPHONE : <Text>+24177888664</Text></Text>
-          <Text style={styles.text}>EMAIL : <Text>@gmail.com</Text></Text>
+          <Text style={styles.text}>EMAIL : <Text>obonegloria01@gmail.com</Text></Text>
           <Text style={styles.text}>ADRESSE : <Text>cscs</Text></Text>
           <Text style={styles.text}>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet</Text>
         </View>
@@ -159,9 +160,9 @@ Fusce efficitur magna vel nisl eleifend, in elementum purus pharetra. Phasellus 
             <Text style={styles.text}>Espagnol</Text>
           </View>
           <View style={styles.languageRight}>
-            <Text style={styles.text}>FRANÇAIS</Text>
-            <Text style={styles.text}>ANGLAIS</Text>
-            <Text style={styles.text}>Espagnol</Text>
+            <Text style={styles.text}>MATERNEL</Text>
+            <Text style={styles.text}>INTERMEDIAIRE</Text>
+            <Text style={styles.text}>meduin</Text>
           </View>
         </View>
       </View>
