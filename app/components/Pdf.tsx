@@ -25,19 +25,19 @@ Fusce efficitur magna vel nisl eleifend, in elementum purus pharetra. Phasellus 
         <View>
           <Text style={styles.infos}> FORMATIONS</Text>
           
-          <View style={styles.languageLeft}>
+          <View style={styles.languageLft}>
             <Text style={styles.texts}>2018 - 2019 </Text>
             <Text style={styles.annee}>2015 -  2017</Text>
           </View>
           <View style={styles.languageRight}>
-            <Text style={styles.donne}>ecole 241</Text>
-            <Text style={styles.donnes}>développement d " application web full-stack</Text>
+            <Text style={styles.donne}>Lorem ipsum dolor sit amet</Text>
+            <Text style={styles.donnes}>Lorem ipsum dolor sit amet</Text>
             <Text style={styles.donne}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt, magna vitae condimentum dignissim, velit purus commodo tortor, sed fringilla lectus mi eget leo</Text>
-           <Text  style={styles.donne}> genie informatique option logiciiel</Text>
+           <Text  style={styles.donne}>Lorem ipsum dolor sit amet</Text>
           </View>
         </View>
         <View style={styles.lines}></View>
-        <Text style={styles.info}>EXPERIENCES PERSONNELLES</Text>
+        <Text style={styles.infos}>EXPERIENCES PERSONNELLES</Text>
         <View>
         <View>
         <View style={styles.languageRight}> //languageLefts
@@ -45,52 +45,52 @@ Fusce efficitur magna vel nisl eleifend, in elementum purus pharetra. Phasellus 
         
           </View>
           <View style={styles.languageLefts}>
-            <Text style={styles.donneExperience}>développement d " application web full-stack</Text>
-            <Text style={styles.donneExperience}>développement d " application web full-stack</Text>
-            <Text style={styles.donneExperience}> développement d " application web full-stack</Text>
-           <Text  style={styles.donneExperience}> genie informatique option logiciiel</Text>
+            <Text style={styles.donneExperience}>Lorem ipsum dolor sit amet</Text>
+            <Text style={styles.donneExperience}>Lorem ipsum dolor sit amet</Text>
+            <Text style={styles.donneExperience}>Lorem ipsum dolor sit amet</Text>
+           <Text  style={styles.donneExperience}>Lorem ipsum dolor sit amet</Text>
           </View>
           <View>     <View style={styles.languageRight}> 
             <Text style={styles.textsDesannee}>2018 - 2019 </Text>
             <Text style={styles.annees}>2015 -  2017</Text>
           </View>
           <View style={styles.languageLefts}>
-            <Text style={styles.donneExperience}>développement d " application web full-stack</Text>
-            <Text style={styles.donneExperience}>développement d " application web full-stack</Text>
-            <Text style={styles.donneExperience}> développement d " application web full-stack</Text>
-           <Text  style={styles.donneExperience}> genie informatique option logiciiel</Text>
+            <Text style={styles.donneExperience}>Lorem ipsum dolor sit amet</Text>
+            <Text style={styles.donneExperience}>Lorem ipsum dolor sit amet</Text>
+            <Text style={styles.donneExperience}>Lorem ipsum dolor sit amet</Text>
+           <Text  style={styles.donneExperience}>Lorem ipsum dolor sit amet</Text>
           </View></View></View>
         <View style={styles.languageRight}> //languageLefts
             <Text style={styles.textsDesannee}>2018 - 2019 </Text>
         
           </View>
           <View style={styles.languageLefts}>
-            <Text style={styles.donneExperience}>développement d " application web full-stack</Text>
-            <Text style={styles.donneExperience}>développement d " application web full-stack</Text>
-            <Text style={styles.donneExperience}> développement d " application web full-stack</Text>
-           <Text  style={styles.donneExperience}> genie informatique option logiciiel</Text>
+            <Text style={styles.donneExperience}>Lorem ipsum dolor sit amet</Text>
+            <Text style={styles.donneExperience}>Lorem ipsum dolor sit amet</Text>
+            <Text style={styles.donneExperience}>Lorem ipsum dolor sit amet</Text>
+           <Text  style={styles.donneExperience}>Lorem ipsum dolor sit amet</Text>
           </View>
           <View>     <View style={styles.languageRight}> 
             <Text style={styles.textsDesannee}>2018 - 2019 </Text>
           </View>
           <View style={styles.languageLefts}>
-            <Text style={styles.donneExperience}>développement d " application web full-stack</Text>
-            <Text style={styles.donneExperience}>développement d " application web full-stack</Text>
-            <Text style={styles.donneExperience}> développement d " application web full-stack</Text>
-           <Text  style={styles.donneExperience}> genie informatique option logiciiel</Text>
+            <Text style={styles.donneExperience}>Lorem ipsum dolor sit amet</Text>
+            <Text style={styles.donneExperience}>Lorem ipsum dolor sit ametk</Text>
+            <Text style={styles.donneExperience}>dLorem ipsum dolor sit amet</Text>
+           <Text  style={styles.donneExperience}>Lorem ipsum dolor sit amet</Text>
           </View></View>
         </View>
-        <View style={styles.liness}></View>
-        <Text style={styles.info}>PROJECTS PRERSONNELS</Text>
+        <View style={styles.lines}></View>
+        <Text style={styles.infos}>PROJECTS PRERSONNELS</Text>
         <View style={styles.view}>
         <View style={styles.textinleft}>
-          <Text> 2012 - 2013</Text>
-           <Text style={styles.textinlefts}> 2012 - 2015</Text>
+          <Text  style={styles.languageLefts}> 2012 - 2013</Text>
+           <Text style={styles.languageLefts}> 2012 - 2015</Text>
         </View>
         <View> <View><Text style={styles.textinright}> boulingui </Text></View>
-        <View style={styles.positio}> <Text style={styles.textdelafin}>genie informatique option logiciiel</Text></View>
-          <Text  style={styles.textinrights}> boulingui</Text></View>
-          <View style={styles.positions}> <Text style={styles.textdelafin}>genie informatique option logiciiel</Text></View>
+        <View style={styles.positio}> <Text style={styles.textdelafin}>Lorem ipsum dolor sit amet</Text></View>
+          <Text  style={styles.textinright}>boulingui</Text></View>
+          <View style={styles.positions}> <Text style={styles.textdelafin}>Lorem ipsum dolor sit amet</Text></View>
         </View>
         </View>
       
@@ -160,9 +160,9 @@ Fusce efficitur magna vel nisl eleifend, in elementum purus pharetra. Phasellus 
             <Text style={styles.text}>Espagnol</Text>
           </View>
           <View style={styles.languageRight}>
-            <Text style={styles.text}>MATERNEL</Text>
-            <Text style={styles.text}>INTERMEDIAIRE</Text>
-            <Text style={styles.text}>meduin</Text>
+            <Text style={styles.josue}>MATERNEL</Text>
+            <Text style={styles.josue}>INTERMEDIAIRE</Text>
+            <Text style={styles.josue}>meduin</Text>
           </View>
         </View>
       </View>
@@ -189,9 +189,9 @@ const styles = StyleSheet.create({
   },
   positions:{
     position:"absolute",
-    marginTop:72,
+    marginTop:52,
     width:234,
-     marginLeft:85,
+     marginLeft:185,
   },
   skillContainer: {
     marginBottom: 10,
@@ -235,7 +235,7 @@ const styles = StyleSheet.create({
   },
 view:{
    flexDirection:'row',
-   marginTop:23,
+   marginTop:12,
 
 },
   container:{
@@ -264,6 +264,7 @@ view:{
   },
   textinleft:{
     fontSize:12,
+    marginRight:72,
      
   },
   textinlefts:{
@@ -272,6 +273,8 @@ view:{
      
   },
   textinright:{
+    marginTop:28,
+    marginRight:72,
     fontSize:12,
     marginLeft:23,
 
@@ -310,13 +313,15 @@ view:{
 
   line: {
     marginTop: 8,
+    marginLeft:13,
     width: '100%',
     borderTopWidth: 1,
     borderTopColor: 'violet',
   },
   lines:{
     marginTop: 48,
-    width: '100%',
+    marginLeft:28,
+    width: '91%',
     borderTopWidth: 1,
     borderTopColor: 'violet',
   },
@@ -364,9 +369,14 @@ view:{
   },
   textdelafin: {
   display:'flex',
+    marginTop:38,
+    marginLeft:10,
+    fontSize: 8,
+  },
+  josue: {
     marginTop: 5,
     margin:12,
-    fontSize: 8,
+    fontSize: 5,
   },
   text: {
     marginTop: 5,
@@ -376,11 +386,12 @@ view:{
   infos: {
     marginTop: 10,
     color: 'violet',
-    marginLeft:29,
+    marginLeft:28,
     fontSize: 8,
   },
   info: {
-    marginTop: 10,
+    marginLeft:12,
+    marginTop: 5,
     color: 'violet',
     fontSize: 8,
   },
@@ -411,11 +422,15 @@ view:{
   },
   languageLeft: {
     marginTop:7,
-    marginLeft:2,
+    marginLeft:3,
+  },
+  languageLft: {
+    marginTop:7,
+    marginLeft:33,
   },
   languageLefts: {
     marginTop:28,
-    marginRight:62,
+    marginLeft:28,
   },
   
   languageRight: {
