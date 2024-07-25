@@ -1,102 +1,46 @@
 "use client";
 import React from 'react';
 import { Page, Text, View, Document, StyleSheet, Image } from '@react-pdf/renderer';
+import { Container } from 'postcss';
 
 
-const image = '/image/IMG_0505_Original.jpg';
+const image = '/image/IMG_0505_Original.jpeg';
 
 const Pdf = () => (
   <Document>
     <Page size="A4" style={styles.page} wrap={false}>
-      {/* Left Section */}
+    <View style={styles.linestyle}></View>
       <View style={styles.left}>
-        <View style={styles.name}>
-          <Text>
-          Gloria Obone</Text>
-          <Text style={styles.rest}>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet</Text>
+        <View></View>
+        <View style={styles.rectangle}></View>
+        <View style={styles.name}><Text>BOULINGUI BOULINGUI</Text></View>
+        <View style={styles.names}><Text style={styles.text}>Lorem ipsum dolor sit amet, consectetur adipi  consectetur Lorem ipsum dolor sit amet</Text></View>
+        <View style={styles.profil} >
+          <Text style={styles.contact}>PROFIL</Text>
         </View>
-        <View style={styles.violet}></View>
-        <View style={styles.enbasdelabarreviolet}> <Text>Profil</Text>
-       <View style={styles.container}> <Text style={styles.lorem}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt, magna vitae condimentum dignissim, velit purus commodo tortor, sed fringilla lectus mi eget leo. Nullam eu mi semper, vulputate enim eu, fermentum nulla. Nunc vitae malesuada eros. Vestibulum vitae efficitur eros. Proin tempor ultricies purus, a vehicula ex fermentum vel. Duis faucibus, mi id ullamcorper scelerisque, eros ipsum rutrum lorem, nec volutpat urna libero non odio. Mauris quis purus vel eros sollicitudin vestibulum. Aenean consectetur lobortis quam, non venenatis augue auctor in. Etiam a erat nec odio maximus faucibus. Proin et velit at felis dignissim ultricies. Pellentesque id libero eu elit tristique ultricies. Sed condimentum varius lectus, a venenatis purus facilisis eget. Vivamus in quam euismod, condimentum nisi sed, lacinia mi. Nullam ac vestibulum est. Curabitur non ultricies urna.
-
-Fusce efficitur magna vel nisl eleifend, in elementum purus pharetra. Phasellus id libero risus. Mauris interdum arcu eu ligula fermentum, vel lacinia tortor pellentesque. Nulla et leo id libero pharetra fermentum. In hac habitasse platea dictumst. Curabitur ac odio sed mi feugiat feugiat a in erat. Proin vestibulum leo nec mi rhoncus convallis. Nulla facilisi. Duis tristique, ex eu blandit tincidunt, mi augue pellentesque turpis, vitae aliquet leo augue eget orci. Donec ultrices dui quis ipsum fermentum, sed condimentum odio euismod. Phasellus sed sollicitudin justo. Sed vitae nibh condimentum, convallis sem non, tincidunt odio. Nunc gravida risus nisi, vitae tincidunt sapien pellentesque a. Integer eu augue vitae libero eleifend sagittis.
-</Text></View>
-        </View>
-        <View>
-          <Text style={styles.infos}> FORMATIONS</Text>
-          
-          <View style={styles.languageLft}>
-            <Text style={styles.texts}>2018 - 2019 </Text>
-            <Text style={styles.annee}>2015 -  2017</Text>
-          </View>
-          <View style={styles.languageRight}>
-            <Text style={styles.donne}>Lorem ipsum dolor sit amet</Text>
-            <Text style={styles.donnes}>Lorem ipsum dolor sit amet</Text>
-            <Text style={styles.donne}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tincidunt, magna vitae condimentum dignissim, velit purus commodo tortor, sed fringilla lectus mi eget leo</Text>
-           <Text  style={styles.donne}>Lorem ipsum dolor sit amet</Text>
-          </View>
-        </View>
-        <View style={styles.lines}></View>
-        <Text style={styles.infos}>EXPERIENCES PERSONNELLES</Text>
-        <View>
-        <View>
-        <View style={styles.languageRight}> //languageLefts
-            <Text style={styles.textsDesannee}>2018 - 2019 </Text>
-        
-          </View>
-          <View style={styles.languageLefts}>
-            <Text style={styles.donneExperience}>Lorem ipsum dolor sit amet</Text>
-            <Text style={styles.donneExperience}>Lorem ipsum dolor sit amet</Text>
-            <Text style={styles.donneExperience}>Lorem ipsum dolor sit amet</Text>
-           <Text  style={styles.donneExperience}>Lorem ipsum dolor sit amet</Text>
-          </View>
-          <View>     <View style={styles.languageRight}> 
-            <Text style={styles.textsDesannee}>2018 - 2019 </Text>
-            <Text style={styles.annees}>2015 -  2017</Text>
-          </View>
-          <View style={styles.languageLefts}>
-            <Text style={styles.donneExperience}>Lorem ipsum dolor sit amet</Text>
-            <Text style={styles.donneExperience}>Lorem ipsum dolor sit amet</Text>
-            <Text style={styles.donneExperience}>Lorem ipsum dolor sit amet</Text>
-           <Text  style={styles.donneExperience}>Lorem ipsum dolor sit amet</Text>
-          </View></View></View>
-        <View style={styles.languageRight}> //languageLefts
-            <Text style={styles.textsDesannee}>2018 - 2019 </Text>
-        
-          </View>
-          <View style={styles.languageLefts}>
-            <Text style={styles.donneExperience}>Lorem ipsum dolor sit amet</Text>
-            <Text style={styles.donneExperience}>Lorem ipsum dolor sit amet</Text>
-            <Text style={styles.donneExperience}>Lorem ipsum dolor sit amet</Text>
-           <Text  style={styles.donneExperience}>Lorem ipsum dolor sit amet</Text>
-          </View>
-          <View>     <View style={styles.languageRight}> 
-            <Text style={styles.textsDesannee}>2018 - 2019 </Text>
-          </View>
-          <View style={styles.languageLefts}>
-            <Text style={styles.donneExperience}>Lorem ipsum dolor sit amet</Text>
-            <Text style={styles.donneExperience}>Lorem ipsum dolor sit ametk</Text>
-            <Text style={styles.donneExperience}>dLorem ipsum dolor sit amet</Text>
-           <Text  style={styles.donneExperience}>Lorem ipsum dolor sit amet</Text>
-          </View></View>
-        </View>
-        <View style={styles.lines}></View>
-        <Text style={styles.infos}>PROJECTS PRERSONNELS</Text>
-        <View style={styles.view}>
-        <View style={styles.textinleft}>
-          <Text  style={styles.languageLefts}> 2012 - 2013</Text>
-           <Text style={styles.languageLefts}> 2012 - 2015</Text>
-        </View>
-        <View> <View><Text style={styles.textinright}> boulingui </Text></View>
-        <View style={styles.positio}> <Text style={styles.textdelafin}>Lorem ipsum dolor sit amet</Text></View>
-          <Text  style={styles.textinright}>boulingui</Text></View>
-          <View style={styles.positions}> <Text style={styles.textdelafin}>Lorem ipsum dolor sit amet</Text></View>
-        </View>
-        </View>
-      
-    
-
-      {/* Right Section */}
+        <View style={styles.container}><Text style={styles.textinfo}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo. Fusce malesuada vulputate faucibus. Integer in hendrerit nisi. Praesent a hendrerit urna. In nec tempor tortor. Vestibulum et metus nulla. Suspendisse potenti. Mauris auctor massa at orci consectetur, nec commodo orci tristique."</Text></View>
+        <View style={styles.formation}><Text style={styles.info}>FORMATIONS</Text></View>
+        <View style={styles.containers}>
+         <View style={styles.left}>
+            <Text style={styles.anneedeformation1}>2018 - 2019</Text>
+            <Text style={styles.anneedeformation2}>2018 - 2019</Text>
+         </View>
+       
+           <View style={styles.ecoledeformation}> <Text   style={styles.textinfo}>Ecole  241</Text>
+           <Text style={styles.anneedeformationdeux}>Developpement d 'application web ful-stack</Text>
+           </View>
+         
+      </View>
+      <View style={styles.mptic}>           <Text style={styles.nptics}> Developpement d 'application web ful-stack Developpement d 'application web ful-stack Developpement d 'application web ful-stack</Text></View>
+      <Text  style={styles.genielogiciel}> Developpement d 'application web ful-stack</Text>
+      <View style={styles.linedeexperienceprofessionnelle}></View>
+      <View style={styles.experience}><Text style={styles.info}>EXPERIENCES PROFESSIONNELLES</Text></View>
+      <View style={styles.left}>
+        <Text style={styles.coach}>coach au e-startup Challenge</Text>
+        <Text>coach au e-startup Challenge</Text>
+      </View>
+         </View>
+     
       <View style={styles.right}>
         {/* Image Section */}
         <View style={styles.imagecontainer}>
@@ -106,10 +50,11 @@ Fusce efficitur magna vel nisl eleifend, in elementum purus pharetra. Phasellus 
         {/* Personal Information Section */}
         <View>
           <Text style={styles.info}>INFORMATIONS PERSONNELLES</Text>
-          <Text style={styles.text}>TÉLÉPHONE : <Text>+24177888664</Text></Text>
-          <Text style={styles.text}>EMAIL : <Text>obonegloria01@gmail.com</Text></Text>
-          <Text style={styles.text}>ADRESSE : <Text>cscs</Text></Text>
-          <Text style={styles.text}>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet</Text>
+          <Text style={styles.contact}>TÉLÉPHONE : <Text style={styles.information}>+24177888664</Text></Text>
+          <Text style={styles.contact}>EMAIL : <Text  style={styles.information}>@gmail.com</Text></Text>
+          <Text style={styles.contact}>ADRESSE : <Text  style={styles.information}>Lorem ipsum dolor sit amet, Lorem </Text></Text>
+          <Text style={styles.contact}>autres information:</Text>
+          <Text style={styles.textinfos}>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet</Text>
         </View>
 
         {/* Separator line */}
@@ -150,14 +95,12 @@ Fusce efficitur magna vel nisl eleifend, in elementum purus pharetra. Phasellus 
 
         {/* Separator line */}
         <View style={styles.line}></View>
-
-        {/* Languages Section */}
         <View>
           <Text style={styles.info}>LANGUES</Text>
           <View style={styles.languageLeft}>
-            <Text style={styles.text}>FRANÇAIS</Text>
-            <Text style={styles.text}>ANGLAIS</Text>
-            <Text style={styles.text}>Espagnol</Text>
+            <Text style={styles.texts}>FRANÇAIS</Text>
+            <Text style={styles.texts}>ANGLAIS</Text>
+            <Text style={styles.texts}>Espagnol</Text>
           </View>
           <View style={styles.languageRight}>
             <Text style={styles.josue}>MATERNEL</Text>
@@ -165,6 +108,9 @@ Fusce efficitur magna vel nisl eleifend, in elementum purus pharetra. Phasellus 
             <Text style={styles.josue}>meduin</Text>
           </View>
         </View>
+
+
+
       </View>
     </Page>
   </Document>
@@ -174,10 +120,10 @@ const SkillItem = ({ title }) => {
   return (
     <View style={styles.skillContainer}>
       <Text style={styles.competences}>{title}</Text>
-      <View style={styles.progressBar}>
+     <View style={styles.espace}> <View style={styles.progressBar}>
         <View style={[styles.progress, { width: '67%' }]}></View>
         <View style={styles.circle}></View>
-      </View>
+      </View></View>
     </View>
   );
 };
@@ -187,104 +133,196 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     padding: 20,
   },
-  positions:{
-    position:"absolute",
-    marginTop:52,
-    width:234,
-     marginLeft:185,
+  coach:{
+    
   },
+  experience:{
+    marginTop:12,
+    marginLeft:13,
+  },
+  genielogiciel:{
+    fontSize:9,
+    marginTop:14,
+    marginLeft:115,
+  },
+  nptics:{
+    color:"#e1e1f6",
+    width:"56%",
+    fontSize:6,
+
+  },
+  mptic:{
+    position:'absolute',
+    marginTop:233,
+    marginLeft:116,
+  },
+  anneedeformationdeux:{
+    fontSize:9,
+    marginTop:8,
+    marginLeft:13,
+  },
+  ecoledeformation:{
+    position:"relative",
+    marginRight:200,
+    marginTop:2,
+  },
+  containers:{
+    flexDirection:'row',
+  },
+  sujetdeformation:{
+    position:"absolute",
+    marginRight:179,
+  },
+
+  anneedeformation2:{
+    marginLeft:48,
+    fontSize:9,
+    marginTop:30,
+    color:"#e1e1f6",
+  },
+  anneedeformation1:{
+  marginLeft:48,
+  fontSize:9,
+  marginTop:10,
+  color:"#e1e1f6",
+  },
+  formation:{
+    marginTop:99,
+    marginLeft:16,
+  },
+  container:{
+    width:"89%",
+    marginLeft:17,
+    position:"absolute",
+    marginTop:110,
+
+  },
+  profil:{
+    position:"absolute",
+   marginTop:99,
+   marginLeft:17,
+  },
+  name:{
+    position:'absolute',
+    marginTop:12,
+    marginLeft:73,
+
+  },
+  names:{
+    position:'absolute',
+    marginTop:40,
+    fontSize:12,
+    marginLeft:27,
+
+
+  },
+  langue: {
+    alignItems: 'flex-start',
+    marginBottom: 10, 
+  },
+
+  rowContainer: {
+
+    flexDirection: 'row', 
+    alignItems: 'center', 
+    paddingHorizontal: 20, 
+  },
+  leftColumn: {
+    flex: 1, 
+    paddingRight: 10, 
+  },
+  rightColumn: {
+    flex: 1, 
+    paddingLeft: 10, 
+  },
+
   skillContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: "#f7f7f7",
     marginBottom: 10,
     paddingHorizontal: 15,
   },
+  positions:{
+    position:"absolute",
+    marginTop:47,
+    width:234,
+     marginLeft:185,
+  },
+  espace:{
+    marginTop:3,
+    height:12,
+    width:12,
+    position:"absolute",
+    marginLeft:83,
+  },
+  
+ 
+  information:{
+    fontSize:7,
+    marginLeft:22,
+    color:"#e1e1f6",
+  },
   competences: {
     fontSize: 8,
+    marginTop:6,
+    color:"#e1e1f6",
     fontWeight: 'bold',
+    marginRight:43,
     marginBottom: 5,
   },
   progressBar: {
     height: 4,
-    backgroundColor: '#e0e0e0',
+    marginTop:3,
+    width:64,
+    backgroundColor: '#c7c6c6',
     borderRadius: 5,
     flexDirection: 'row',
     alignItems: 'center',
   },
   progress: {
     height: '100%',
+
     backgroundColor: '#007bff',
     borderTopLeftRadius: 5,
     borderBottomLeftRadius: 5,
+  },
+  rectangle: {
+    marginLeft:10,
+    width: 20,           
+    height: 70,           
+    backgroundColor: 'violet',
+    borderWidth: 2,       
+    borderColor: 'violet',
   },
   circle: {
     width: 9,
     height: 9,
     borderRadius: 10,
     backgroundColor: '#007bff',
-    marginLeft: -10,
+    marginLeft: -7,
   },
-  positio:{
-    position:"absolute",
-    marginTop:12,
-    width:234,
-    marginLeft:18,
-  },
+ 
   position:{
     position:"absolute",
     marginTop:12,
     marginLeft:94,
   },
-view:{
-   flexDirection:'row',
-   marginTop:12,
 
-},
-  container:{
-    height:45,
-    width:298,
-  },
+
   
-  lorem:{
-    marginTop:6,
-    fontSize: 8,
-  },
+
   enbasdelabarreviolet:{
     marginTop:23,
     marginLeft:33,
   },
-  name: {
-    position:"absolute",
-    marginTop:13,
-    marginLeft:57,
-    marginBottom: 10,
-  },
+
   violet: {
     backgroundColor: 'violet',
     height: 88,
     width: 32,
   },
-  textinleft:{
-    fontSize:12,
-    marginRight:72,
-     
-  },
-  textinlefts:{
-    fontSize:12,
-    marginTop:43,
-     
-  },
-  textinright:{
-    marginTop:28,
-    marginRight:72,
-    fontSize:12,
-    marginLeft:23,
 
-  },
-  textinrights:{
-    fontSize:15,
-    marginTop:43,
-    marginLeft:23,
-
-  },
   rest: {
     marginTop:22,
     fontSize: 8,
@@ -310,48 +348,55 @@ view:{
     flexDirection: 'column',
     marginTop: 8,
   },
+  linedeexperienceprofessionnelle:{
+    marginTop: 8,
+    marginLeft:25,
+    width: '88%',
+    borderTopWidth: 2,
+    borderTopColor: 'violet',
+  },
 
   line: {
     marginTop: 8,
     marginLeft:13,
     width: '100%',
-    borderTopWidth: 1,
+    borderTopWidth: 2,
+    borderTopColor: 'violet',
+  },
+  linestyles:{
+    
+    position:"relative",
+    marginTop: 83,
+    marginLeft:13,
+    width: '100%',
+    borderTopWidth: 8,
+    borderTopColor: 'violet',
+  },
+  linestyle:{
+    
+    position:"absolute",
+    marginTop: 860,
+    marginLeft:19,
+    width: '100%',
+    borderTopWidth: 8,
     borderTopColor: 'violet',
   },
   lines:{
     marginTop: 48,
     marginLeft:28,
     width: '91%',
-    borderTopWidth: 1,
+    borderTopWidth: 2,
     borderTopColor: 'violet',
   },
-  liness:{
-    marginTop: 58,
-    width: '100%',
-    borderTopWidth: 1,
-    borderTopColor: 'violet',
-  },
-  annees:{
-    position:"relative",
-    marginTop: 85,
-    marginLeft:209,
-    fontSize: 8,
-    
-  },
-  annee:{
-    marginTop: 55,
-    fontSize: 8,
-  },
+
+  
+
   donnes:{
     margin: 22,
     marginLeft:34,
     fontSize: 8,
   },
-  donneExperience:{
-    marginTop: 5,
-    marginRight:74,
-    fontSize: 8,
-  },
+
   donne:{
     marginTop: 5,
     marginLeft:34,
@@ -363,32 +408,48 @@ view:{
     marginLeft:209,
     fontSize: 8,
   },
-  texts:{
-    marginTop: 5,
-    fontSize: 8,
-  },
-  textdelafin: {
-  display:'flex',
-    marginTop:38,
-    marginLeft:10,
-    fontSize: 8,
+
+  josues:{
+    marginTop: 15,
+    fontSize: 7,
+    marginLeft:8,
   },
   josue: {
-    marginTop: 5,
-    margin:12,
+    color:"#e1e1f6",
+    margin: 7,
     fontSize: 5,
+  },
+  textinfos:{
+    marginTop: 6,
+    fontSize: 8,
+    marginLeft:13,
+    color:"#e1e1f6",
+  },
+  contact:{
+    marginTop: 9,
+    fontSize: 8,
+    marginLeft:13,
+ 
+  },
+  textinfo:{
+    marginTop: 9,
+    fontSize: 8,
+    marginLeft:13,
+    color:"#e1e1f6",
+  },
+  texts: {
+    marginTop: 5,
+    margin:8,
+    fontSize: 5,
+  
   },
   text: {
     marginTop: 5,
-    margin:12,
-    fontSize: 8,
+    margin:8,
+    fontSize: 5,
+    color:"#e1e1f6",
   },
-  infos: {
-    marginTop: 10,
-    color: 'violet',
-    marginLeft:28,
-    fontSize: 8,
-  },
+
   info: {
     marginLeft:12,
     marginTop: 5,
@@ -396,7 +457,7 @@ view:{
     fontSize: 8,
   },
   imagecontainer: {
-    marginLeft:35,
+    marginLeft:75,
     borderWidth: 1,
     borderStyle: 'dotted',
     borderColor: 'black',
@@ -404,6 +465,7 @@ view:{
     height: 100,
     alignSelf: 'center',
     marginBottom: 10,
+   
   },
   image: {
     width: '100%',
@@ -414,7 +476,7 @@ view:{
   },
   left: {
     width: '70%',
-    paddingRight: 10,
+    marginLeft: -20,
   },
   right: {
     width: '30%',
@@ -423,14 +485,6 @@ view:{
   languageLeft: {
     marginTop:7,
     marginLeft:3,
-  },
-  languageLft: {
-    marginTop:7,
-    marginLeft:33,
-  },
-  languageLefts: {
-    marginTop:28,
-    marginLeft:28,
   },
   
   languageRight: {

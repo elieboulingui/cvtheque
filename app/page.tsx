@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import {View,PDFViewer } from '@react-pdf/renderer';
 import Pdf from "../app/components/Pdf";
-
 export default function Home() {
   return (
     <main className="w-screen h-screen">
