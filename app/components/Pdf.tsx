@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 import { Page, Text, View, Document, StyleSheet, Image } from '@react-pdf/renderer';
-import { Container } from 'postcss';
+
 
 
 const image = '/image/IMG_0505_Original.jpeg';
@@ -37,9 +37,40 @@ const Pdf = () => (
       <View style={styles.experience}><Text style={styles.info}>EXPERIENCES PROFESSIONNELLES</Text></View>
       <View style={styles.left}>
         <Text style={styles.coach}>coach au e-startup Challenge</Text>
-        <Text>coach au e-startup Challenge</Text>
+        <Text style={styles.emploies}>ogoue-labs</Text>
+
+        <Text style={styles.emploies}>Formes les participant circulation sfr</Text>
+        <Text style={styles.emploies}>Formes les participant circulation sfr</Text>
+        <Text style={styles.emploies}>Formes les participant circulation sfr</Text>
+     
       </View>
-         </View>
+     
+<View style={styles.anneetaf}>   <Text style={styles.anneedemploies}>2000 - 2014</Text></View>
+<View style={styles.anneetafs}>   <Text style={styles.anneedemploies}>2000 - 2014</Text></View>
+<View style={styles.stagiaire}>
+  <Text style={styles.contact}>stagiaire au departement it</Text>
+  <Text  style={styles.emploiesdefinition}>Airtel Gabon</Text>
+  <Text style={styles.emploiesdefinition}>Orem ipsum dolor sit amet, consectetur adipi  consectetur Lorem ipsum dolor sit amet</Text>
+</View>
+<View style={styles.hachaton}>
+  <Text style={styles.anneedetravails}>20H00 - 2014</Text>
+<Text style={styles.contact}>Coach technique a hachaton nation e-Gabon</Text>
+<Text style={styles.formationdeparicipants}>Ogooue-labs</Text>
+<Text style={styles.formationdeparicipants}>Forme les participants au concours sur :</Text>
+<Text style={styles.formationdeparicipants}>Développeur web </Text>
+<Text style={styles.formationdeparicipants}>Data scientist</Text>
+<Text style={styles.formationdeparicipants}> Architecte cloud </Text>
+<Text style={styles.formationdeparicipants}>Ingénieur en sécurité informatique </Text>
+</View>
+<View style={styles.conseildigital}>
+  <Text style={styles.aujourdhuit}>04/04/2011 - aujourdhuit</Text>
+  <Text style={styles.conseiltext}>Conseiller en formation digital</Text>
+  <Text style={styles.conseiltextgris}>Ogoue tech industrie</Text>
+  <Text style={styles.conseiltextgris}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</Text>
+</View>
+<View style={styles.linedeexperienceprofessionnelle}></View>
+      </View>
+        
      
       <View style={styles.right}>
         {/* Image Section */}
@@ -133,8 +164,81 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     padding: 20,
   },
-  coach:{
+  aujourdhuit:{
+    position:"absolute",
+    fontSize:6,
+    marginTop:10,
+    marginLeft:308,
+  },
+  anneedetravails:{
+    position:"absolute",
+    fontSize:9,
+    marginTop:10,
+    marginLeft:308,
+  },
+  conseildigital:{
+    marginTop:16,
+    marginLeft:10,
+  },
+  hachaton:{
+    marginTop:16,
+    marginLeft:10,
+  },
+  conseiltextgris:{
+    color:"#e1e1f6",
+    marginTop: 9,
+    fontSize: 8,
+    marginLeft:13,
+  },
+  conseiltext:{
+    marginTop: 9,
+    fontSize: 8,
+    marginLeft:13,
+  },
+  formationdeparicipants:{
+    color:"#e1e1f6",
+    marginTop: 9,
+    fontSize: 8,
+    marginLeft:13,
+  },
+  emploiesdefinition:{
+    color:"#e1e1f6",
+      marginTop: 9,
+      fontSize: 8,
+      marginLeft:13,
+   
     
+  },
+  stagiaire:{
+    marginTop:23,
+    marginLeft:11,
+  },
+  anneetafs:{
+    position:"absolute",
+    marginTop:464,
+    marginLeft:183,
+  },
+  anneetaf:{
+    position:"absolute",
+    marginTop:316,
+    marginLeft:183,
+
+  },
+  anneedemploies:{
+    position:'relative',
+    fontSize:9,
+    marginLeft:134,
+  },
+  emploies:{
+    marginLeft:43,
+    marginTop:15,
+    fontSize:10,
+    color:"#e1e1f6",
+  },
+  coach:{
+    marginLeft:43,
+    marginTop:15,
+    fontSize:10,
   },
   experience:{
     marginTop:12,
