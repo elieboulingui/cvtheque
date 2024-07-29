@@ -67,7 +67,7 @@ const Pdf = () => (
         </View>
         <View style={styles.linedeprojectpersonnel}></View>
         <View style={styles.projet}>
-          <Text style={styles.info}> PROJET PERSONNELS</Text>
+          <Text style={styles.infopresonnel}> PROJET PERSONNELS</Text>
           <View>
             <Text style={styles.anneedeprojet}>2000</Text>
             <Text style={styles.descriptionduproject}> mon cv en ligne</Text>
@@ -125,13 +125,13 @@ const Pdf = () => (
         <View>
           <Text style={styles.info}>ATTITUDES</Text>
           <View>
-            <Text style={styles.text}> -  AUTRE INFORMATION</Text>
-            <Text style={styles.text}> -  AUTRE INFORMATION</Text>
-            <Text style={styles.text}> -  AUTRE INFORMATION</Text>
-            <Text style={styles.text}> -  AUTRE INFORMATION</Text>
-            <Text style={styles.text}> -  AUTRE INFORMATION</Text>
-            <Text style={styles.text}> -  AUTRE INFORMATION</Text>
-            <Text style={styles.text}> -  AUTRE INFORMATION</Text>
+            <Text style={styles.text}> - AUTRE INFORMATION</Text>
+            <Text style={styles.text}> - AUTRE INFORMATION</Text>
+            <Text style={styles.text}> - AUTRE INFORMATION</Text>
+            <Text style={styles.text}> - AUTRE INFORMATION</Text>
+            <Text style={styles.text}> - AUTRE INFORMATION</Text>
+            <Text style={styles.text}> - AUTRE INFORMATION</Text>
+            <Text style={styles.text}> - AUTRE INFORMATION</Text>
           </View>
         </View>
 
@@ -140,18 +140,18 @@ const Pdf = () => (
         <View>
           <Text style={styles.info}>LANGUES</Text>
           <View style={styles.languageLeft}>
-            <Text style={styles.texts}>FRANÇAIS</Text>
-            <Text style={styles.texts}>ANGLAIS</Text>
-            <Text style={styles.texts}>Espagnol</Text>
+            <Text style={styles.texts}>francais</Text>
+            <Text style={styles.texts}>anglais</Text>
+            <Text style={styles.texts}>espagnol</Text>
           </View>
           <View style={styles.languageRight}>
-            <Text style={styles.josue}>MATERNEL</Text>
+            <Text style={styles.josue}>maternel</Text>
             <Text style={styles.josue}>intermediaire</Text>
             <Text style={styles.josue}>meduin</Text>
           </View>
         </View>
       </View>
-      <View style={[styles.linestyle, { display: "flex", width: "100%", borderTopWidth: 12, bottom: 3, left: 0, right: 0 }]}></View>
+      <View style={[styles.linestyle, { display: "flex", width: "100%", borderTopWidth: 14,  bottom: 3, left: 0, right: 0 }]}></View>
     </Page>
   </Document>
 );
@@ -175,27 +175,27 @@ const styles = StyleSheet.create({
   },
   descriptionduprojectdeuxpigesdescription: {
     position: "absolute",
-    marginTop: 55,
+    marginTop: 59,
     fontSize: 8,
-    marginLeft: 43,
+    marginLeft: 63,
   },
   descriptionduprojectdeuxpiges: {
     position: "absolute",
     marginTop: 40,
     fontSize: 8,
-    marginLeft: 43,
+    marginLeft: 63,
   },
   descriptionduprojectdeux: {
     position: "absolute",
     marginTop: 24,
     fontSize: 8,
-    marginLeft: 43,
+    marginLeft: 63,
   },
   descriptionduproject: {
     position: "absolute",
     marginTop: 8,
     fontSize: 8,
-    marginLeft: 43,
+    marginLeft: 63,
   },
   anneedeprojetdeux: {
     marginTop: 24,
@@ -203,13 +203,14 @@ const styles = StyleSheet.create({
     marginLeft: 13,
   },
   projet: {
-    marginTop: 2,
-    marginLeft: 6,
+    paddingTop:5,
+    margin:6,
+    paddingBottom:15,
   },
   linedeprojectpersonnel: {
-    marginTop: 6,
-    marginLeft: 23,
-    width: '88%',
+    marginTop: 10,
+    marginLeft: 20,
+    width: '90%',
     borderTopWidth: 2,
     borderTopColor: 'violet',
   },
@@ -217,7 +218,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     fontSize: 9,
     marginTop: 10,
-    marginLeft: 278,
+    marginLeft: 258,
   },
   anneedetravails: {
     position: "absolute",
@@ -507,7 +508,7 @@ const styles = StyleSheet.create({
   linedeexperienceprofessionnelle: {
     marginTop: 8,
     marginLeft: 26,
-    width: '88%',
+    width: '90%',
     borderTopWidth: 2,
     borderTopColor: 'violet',
   },
@@ -598,7 +599,7 @@ const styles = StyleSheet.create({
   },
   text: {
     marginTop: 12,
-    margin: 8,
+    marginLeft: 14,
     fontSize: 8,
 
   },
@@ -607,7 +608,12 @@ const styles = StyleSheet.create({
     margin: 8,
     fontSize: 8,
   },
-
+  infopresonnel:{
+    marginTop: 5,
+    color: 'violet',
+    marginLeft: 10 ,
+    fontSize: 8,
+  },
   info: {
     marginTop: 5,
     color: 'violet',
