@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import { Page, Text, View, Document, StyleSheet, Image ,Font, pdf} from '@react-pdf/renderer';
+import { Page, Text, View, Document, StyleSheet, Image } from '@react-pdf/renderer';
 
 
 // Define your image path
@@ -9,44 +9,114 @@ const image = '/image/BD8Rb_5f.jpg';
 const Pdf = () => (
   <Document>
     <Page size="A4" style={styles.page}>
-    {/*  header de la page */}
-      <View style={styles.container}>
-        <View style={styles.left}>
-          <Image src={image} style={styles.image}/>
-           <View style={styles.info}>
-           <Text style={styles.name} >Pierre Dupont</Text>
-           <Text style={styles.jobtitle}>Adjointe administrative</Text>
-           </View>
+    <View style={styles.container}> 
+  <View style={styles.lefts}> 
+    <Image src={image} style={styles.image}/>
+    <View style={styles.padding}>
+    <Text style={styles.text}>Pierre Dupont</Text>
+    <Text style={styles.text}> Adjointe administrative</Text>
+    </View>
+  </View>
+  <View style={styles.right}>
+    <View style={styles.containeright}> 
+    <Text style={styles.text2}>Adresse:<Text style={styles.text2}>25 rue des Fleurs 33500 Libourne , France</Text></Text>
+    <Text style={styles.text2}>Email:pierre.dupont@gmail.com</Text>
+    <Text style={styles.text2}>telefone:<Text style={styles.text}>+33123456789</Text></Text>
+    </View>
+    <View style={styles.containeright}>
+    <Text style={styles.text2}>Date de nascinemento:<Text style={styles.text}>07-06-82</Text></Text>
+    <Text style={styles.text2}> Nationnalite: British</Text></View></View></View>
+    <View style={styles.dashed}></View>
+    <View style={styles.container}>
+    <View style={styles.left}>
+      <View style={styles.black}> <Text  style={styles.color}>OBJECTIF</Text> </View>
+    </View>
+    <View style={styles.right}>
+     <View> <Text style={styles.align}> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed ipsum vitae velit lacinia lacinia.  </Text></View>
+       </View>
+    </View>
+    <View style={styles.dashed}></View>
+    <View style={styles.container}>
+       <View  style={styles.left}> 
+       <View style={styles.black}> <Text  style={styles.color}>EXPERIENCE</Text> </View>
+       <View style={styles.column}>
+          <Text style={styles.text1}> jun 2013 - Mars 2017</Text>
+          <Text style={styles.text1}>Paris France</Text>
         </View>
-        <View style={styles.right}>
-          <View  style={styles.containerdeadress}>
-          <Text style={ styles.adress}>Adresss : <Text>25  rue des fleurs  33500 LIBOURNE, France</Text></Text>
-          <Text  style={ styles.adress}>Email : <Text>pierre.dupont@gmai.com</Text></Text>
-          <Text  style={ styles.adress}>Telefone :  <Text>+33 1 25 45 67  89 </Text></Text>
-      </View>
-      <View  style={styles.containerdeux}>
-          <Text  style={ styles.adress}>Data de nascimento: <Text>07-06-82</Text></Text>
-          <Text  style={ styles.adress}>Nationnalité<Text>British</Text></Text>
-      </View>
+        <View style={styles.columns}>
+          <Text style={styles.text1}> jun 2013 - Mars 2017</Text>
+          <Text style={styles.text1}>Paris France</Text>
         </View>
-      
-      </View>
-          {/* partie de l objectif */}
-          <View style={styles.dashed}></View>
-          <View style={styles.container}>
-        <View style={styles.left}>
-           <View style={styles.black}>
-           <Text style={styles.white} >OBJECTIF</Text>
-           </View>
+       </View>
+       
+       <View  style={styles.right}>
+       <View style={styles.textright}> <Text style={styles.align}>Spécialiste des communications  </Text>
+       <Text style={styles.text}>agence de marketing advibes</Text></View>
+        <View> <Text style={styles.align}> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed ipsum vitae velit lacinia lacinia.  </Text>
+        <Text style={styles.align}>Spécialiste des communications  </Text>
+       <Text style={styles.text}>agence de marketing advibes</Text></View>
+        <View> <Text style={styles.align}> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed ipsum vitae velit lacinia lacinia.  </Text>
         </View>
-        <View style={styles.right1}>
-          <View  style={styles.containerdeadress1}>
-          <Text style={ styles.center}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Donec euismod, nisi vel consectetur euismod, nunc nulla viverra urna, </Text>
+         </View>
+         
+    </View>
+    <View style={styles.dashed}></View>
+    <View style={styles.container}>
+       <View  style={styles.left}> 
+       <View style={styles.black}> <Text  style={styles.color}>FORMATIONS</Text> </View>
+       <View style={styles.column}>
+          <Text style={styles.text1}> jun 2013 - Mars 2017</Text>
+          <Text style={styles.text1}>Paris France</Text>
         </View>
-        </View>
-           {/* partie de l experience */}
-      </View>
-
+       </View>
+       
+       <View  style={styles.right}>
+       <View style={styles.textright}> <Text style={styles.align}>Licence d 'art</Text>
+       <Text style={styles.text}>universite paris iderot</Text></View>
+        <View> <Text style={styles.align}> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed ipsum vitae velit lacinia lacinia.  </Text>
+    </View>
+         </View>
+         
+    </View>
+    <View style={styles.dashed}></View>
+    <View style={styles.container}>
+    <View style={styles.little}>
+    <View style={styles.black}> <Text  style={styles.color}>FORMATIONS</Text> </View>
+    <Text style={styles.textdefin}> jun 2013 - Mars 2017</Text>
+    <Text style={styles.textdefin}> jun 2013 - Mars 2017</Text>
+    <Text style={styles.textdefin}> jun 2013 - Mars 2017</Text>
+    <Text style={styles.textdefin}> jun 2013 - Mars 2017</Text>
+    <Text style={styles.textdefin}> jun 2013 - Mars 2017</Text>
+    <Text style={styles.textdefin}> jun 2013 - Mars 2017</Text>
+    <Text style={styles.textdefin}> jun 2013 - Mars 2017</Text>
+    <Text style={styles.textdefin}> jun 2013 - Mars 2017</Text>
+      <Text style={styles.textdefin}> jun 2013 - Mars 2017</Text>
+    </View>
+    <View style={styles.meduin}>
+    <View style={styles.black}> <Text  style={styles.color}>FORMATIONS</Text> </View>
+    <Text style={styles.textdefin}> jun 2013 - Mars 2017</Text>
+    <Text style={styles.textdefin}> jun 2013 - Mars 2017</Text>
+    <Text style={styles.textdefin}> jun 2013 - Mars 2017</Text>
+    <Text style={styles.textdefin}> jun 2013 - Mars 2017</Text>
+    <Text style={styles.textdefin}> jun 2013 - Mars 2017</Text>
+    <Text style={styles.textdefin}> jun 2013 - Mars 2017</Text>
+    <Text style={styles.textdefin}> jun 2013 - Mars 2017</Text>
+    <Text style={styles.textdefin}> jun 2013 - Mars 2017</Text>
+      <Text style={styles.textdefin}> jun 2013 - Mars 2017</Text>
+    </View>
+    <View style={styles.hard}>
+    <View style={styles.black}> <Text  style={styles.color}>FORMATIONS</Text> </View>
+    <Text style={styles.textdefin}> jun 2013 - Mars 2017</Text>
+    <Text style={styles.textdefin}> jun 2013 - Mars 2017</Text>
+    <Text style={styles.textdefin}> jun 2013 - Mars 2017</Text>
+    <Text style={styles.textdefin}> jun 2013 - Mars 2017</Text>
+    <Text style={styles.textdefin}> jun 2013 - Mars 2017</Text>
+    <Text style={styles.textdefin}> jun 2013 - Mars 2017</Text>
+    <Text style={styles.textdefin}> jun 2013 - Mars 2017</Text>
+    <Text style={styles.textdefin}> jun 2013 - Mars 2017</Text>
+      <Text style={styles.textdefin}> jun 2013 - Mars 2017</Text>
+    </View>
+    </View>
     </Page>
     
   </Document>
@@ -56,12 +126,47 @@ const styles = StyleSheet.create({
   page: {
     padding: 28,
   },
-  white:{
-    color:"white",
-    fontSize:12,
+  little:{
+    width:"30%"
   },
-  right1:{
-    padding:12,
+  meduin:{
+    width:"30%",
+  },
+  hard:{
+    width:"30%"
+  },
+  textright:{
+    paddingTop:40,
+  },
+  column:{
+    paddingTop:23,
+    paddingRight:34,
+    display:"flex",
+    flexDirection:"column",
+  },
+  columns:{
+    paddingTop:50,
+    paddingRight:34,
+    display:"flex",
+    flexDirection:"column",
+  },
+  align:{
+    paddingTop:10,
+    fontSize:12,
+    textAlign:"left",
+  },
+  color:{
+
+    color:"white",
+    fontSize:10,
+  }
+  ,
+  black:{
+    marginTop:10,
+    padding:4,
+    width:82,
+    backgroundColor:"black",
+
   },
   dashed:{
 
@@ -71,76 +176,48 @@ const styles = StyleSheet.create({
     borderTopStyle: 'dashed', 
 marginTop:14,
   },
-  black:{
-    marginTop:19,
-    width:70,
-    backgroundColor:"black",
-    marginRight:75,
+  text1:{
+    fontSize:10,
   },
-  container: {
-    flexDirection: "row",
-  },
-  adress:{
-    fontWeight:'bold',
+  textdefin:{
+    fontSize:12,
+   paddingTop:6,
+  }
+  ,
+  text2:{
     textAlign:'right',
     fontSize:12,
   },
-  containerdeux:{
-    marginTop:60,
-    position: 'absolute',
-    width: 200,
-    marginLeft:68,
-  },
-  center:{
+  text:{
+  textAlign:'left',
     fontSize:12,
-   textAlign:"right",
-   width:303,
   },
-  containerdeadress1:{
-    marginTop:12,
+  containeright:{
+    paddingTop:10,
+   paddingLeft:100,
+  },
+  padding:{
+     padding:15,
+  },
+image:{
+  height:100,
+  width:109,
+},
+lefts:{
+   width:"50%",
+   display:'flex',
+   flexDirection:'row',
+},
+  left:{
+    width:"50%",
+  },
+  right:{
+    width:'50%'
+  },
+  container:{
+    display:'flex',
+    flexDirection:'row',
 
-    height:80,
-  },
-  containerdeadress: {
-    position: 'absolute',
-    width: 200,
-    marginLeft:68,
-
-  },
-  viewdutext: {
-    position: 'absolute',
-  },
-  carnetteDepierretelephone: {
-    position: "absolute",
-    marginTop: 30,
-    marginRight: 85,
-  },
-  name: {
-    fontWeight: 'bold',
-    fontSize: 18,
-  },
-  jobtitle: {
-    marginTop: 7,
-    fontSize: 10,
-  },
-  info: {
-    marginLeft: 85,
-    marginTop: 29,
-    position: 'absolute',
-  },
-  left: {
-    width: "40%",
-  },
-  right: {
-    width: "70%",
-    padding: 27,
-    marginTop: 19,
-    position: "absolute",
-    marginLeft: 269,
-  },
-  image: {
-    height: 97,
-    width: 75,
   },
 });
  export default  Pdf;
