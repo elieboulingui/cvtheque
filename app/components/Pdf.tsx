@@ -153,6 +153,18 @@ const Pdf = () => (
       </View>
       <View style={[styles.linestyle, { display: "flex", width: "100%", borderTopWidth: 14,  bottom: 3, left: 0, right: 0 }]}></View>
     </Page>
+    <Page>
+      <View style={styles.containerdeprierredupont}>
+        <View style={styles.containerpierreleft}>
+          <Image src={image} style={styles.imagedepierre}/>
+           <View style={styles.nomdepierre}>
+           <Text style={styles.pierreDupont} >Pierre Dupont</Text>
+           <Text style={styles.descriptiondepostedeprierre}>Adjointe administrative</Text>
+           </View>
+        </View>
+        <View style={styles.containerdeladressedepierre} ></View>
+      </View>
+    </Page>
   </Document>
 );
 
@@ -169,6 +181,32 @@ const SkillItem = ({ title }) => {
 };
 
 const styles = StyleSheet.create({
+//------------------------------------page 2--------------------------------------------------------------
+containerdeprierredupont:{
+padding:25,
+
+},
+pierreDupont:{
+  fontWeight:'bold',
+  fontSize:18,
+},
+descriptiondepostedeprierre:{
+  marginTop:7,
+  fontSize:10,
+},
+nomdepierre:{
+marginLeft:85,
+marginTop:12,
+  position:'absolute',
+},
+containerpierreleft:{},
+containerdeladressedepierre:{},
+imagedepierre:{
+  height:97,
+width:75,
+},
+
+//--------------------------------------------------------------------page 1-----------------------------
   page: {
     flexDirection: 'row',
     padding: 20,
@@ -658,6 +696,7 @@ const styles = StyleSheet.create({
     marginTop: 25,
     marginLeft: 83,
   },
+  //--------------------------------------------------------------------page 1-----------------------------
 });
 
 export default Pdf;
