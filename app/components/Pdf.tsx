@@ -514,6 +514,7 @@ const styles = StyleSheet.create({
   },
 
   line: {
+    padding:5,
     marginTop: 4,
     marginLeft: 13,
     width: '100%',
@@ -576,6 +577,7 @@ const styles = StyleSheet.create({
     fontSize: 8,
   },
   textinfos: {
+    paddingBottom:7,
     marginTop: 6,
     fontSize: 8,
     marginLeft: 13,
