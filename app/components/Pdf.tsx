@@ -8,7 +8,7 @@ const image = '/image/BD8Rb_5f.jpg';
 
 const Pdf = () => (
   <Document>
-    <Page size="A4" style={styles.page}>
+    <Page size="A4" style={styles.page} wrap={false}>
     <View style={styles.container}> 
   <View style={styles.lefts}> 
     <Image src={image} style={styles.image}/>
@@ -79,7 +79,7 @@ const Pdf = () => (
          
     </View>
     <View style={styles.dashed}></View>
-    <View style={styles.container}>
+    <View style={styles.containers}>
     <View style={styles.little}>
     <View style={styles.black}> <Text  style={styles.color}>FORMATIONS</Text> </View>
     <Text style={styles.textdefin}> jun 2013 - Mars 2017</Text>
@@ -215,9 +215,15 @@ lefts:{
     width:'50%'
   },
   container:{
+  
     display:'flex',
     flexDirection:'row',
 
-  },
+  },containers:{
+
+    display:'flex',
+    flexDirection:'row',
+  }
+
 });
  export default  Pdf;
