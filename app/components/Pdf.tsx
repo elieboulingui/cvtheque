@@ -15,8 +15,8 @@ const Pdf = () => (
         <View style={styles.profil} >
           <Text style={styles.contact}>PROFIL</Text>
         </View>
-        <View style={styles.container}><Text style={styles.textinfo}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo. Fusce malesuada vulputate faucibus. Integer in hendrerit nisi. Praesent a hendrerit urna. In nec tempor tortor. Vestibulum et metus nulla. Suspendisse potenti. Mauris auctor massa at orci consectetur, nec commodo orci tristique.</Text></View>
-        <View style={styles.formation}><Text style={styles.info}>FORMATIONS</Text></View>
+        <View style={styles.container}><Text style={styles.textnfo}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo. Fusce malesuada vulputate faucibus. Integer in hendrerit nisi. Praesent a hendrerit urna. In nec tempor tortor. Vestibulum et metus nulla. Suspendisse potenti. Mauris auctor massa at orci consectetur, nec commodo orci tristique.</Text></View>
+        <View style={styles.formations}><Text style={styles.info}>FORMATIONS</Text></View>
         <View style={styles.containers}>
           <View style={styles.left}>
             <Text style={styles.anneedeformation1}>2018 - 2019</Text>
@@ -66,21 +66,26 @@ const Pdf = () => (
           <Text style={styles.conseiltextgris}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</Text>
         </View>
         <View style={styles.linedeprojectpersonnel}></View>
-        <View style={styles.projet}>
-          <Text style={styles.infopresonnel}> PROJET PERSONNELS</Text>
-          <View>
-            <Text style={styles.anneedeprojet}>2000</Text>
-            <Text style={styles.descriptionduproject}> mon cv en ligne</Text>
-            <Text style={styles.descriptionduprojectdeux}>outils de creation de cv en ligne</Text>
-            <Text style={styles.anneedeprojetdeux}>2017</Text>
-            <Text style={styles.descriptionduprojectdeuxpiges}>piges</Text>
-            <Text style={styles.descriptionduprojectdeuxpigesdescription}>piges</Text>
-            <View>
+<View style={styles.projet}>
+  <Text style={styles.infopresonnel}> PROJET PERSONNELS</Text>
+  <View style={styles.projectContainer}>
+    <View style={styles.projectInfo}>
+      <Text style={styles.anneedeprojet}>2000</Text>
+      <Text style={styles.anneedeprojetdeux}>2017</Text>
+    </View>
+    <View style={styles.projectDescription}>
+      <Text style={styles.descriptionduproject}>mon cv en ligne</Text>
+      <Text style={styles.descriptionduprojectdeux}>outils de creation de cv en ligne</Text>
+      <Text style={styles.descriptionduprojectdeuxpiges}>pges</Text>
+      <Text style={styles.descriptionduprojectdeuxpigesdescription}>pige</Text>
+    </View>
+  </View>
+</View>
 
-            </View>
-          </View>
+        
+          
         </View>
-      </View>
+    
 
 
       <View style={styles.right}>
@@ -137,33 +142,27 @@ const Pdf = () => (
 
         {/* Separator line */}
         <View style={styles.line}></View>
-        <View>
-          <Text style={styles.info}>LANGUES</Text>
-          <View style={styles.languageLeft}>
-            <Text style={styles.texts}>francais</Text>
-            <Text style={styles.texts}>anglais</Text>
-            <Text style={styles.texts}>espagnol</Text>
-          </View>
-          <View style={styles.languageRight}>
-            <Text style={styles.josue}>maternel</Text>
-            <Text style={styles.josue}>intermediaire</Text>
-            <Text style={styles.josue}>meduin</Text>
-          </View>
+        <View style={styles.containers}>
+        <View style={styles.langue}>
+      <Text style={styles.info}>LANGUES</Text>
+      </View>
+      <View style={styles.rowContainer}>
+        <View >
+          <Text style={styles.texts}>francais</Text>
+          <Text style={styles.texts}>anglais</Text>
+          <Text style={styles.texts}>espagnol</Text>
+        </View>
+        <View >
+          <Text style={styles.josue}>maternel</Text>
+          <Text style={styles.josue}>intermediaire</Text>
+          <Text style={styles.josue}>meduin</Text>
+        </View>
+      </View>
+    
+         
         </View>
       </View>
       <View style={[styles.linestyle, { display: "flex", width: "100%", borderTopWidth: 14,  bottom: 3, left: 0, right: 0 }]}></View>
-    </Page>
-    <Page>
-      <View style={styles.containerdeprierredupont}>
-        <View style={styles.containerpierreleft}>
-          <Image src={image} style={styles.imagedepierre}/>
-           <View style={styles.nomdepierre}>
-           <Text style={styles.pierreDupont} >Pierre Dupont</Text>
-           <Text style={styles.descriptiondepostedeprierre}>Adjointe administrative</Text>
-           </View>
-        </View>
-        <View style={styles.containerdeladressedepierre} ></View>
-      </View>
     </Page>
   </Document>
 );
@@ -181,63 +180,71 @@ const SkillItem = ({ title }) => {
 };
 
 const styles = StyleSheet.create({
-//------------------------------------page 2--------------------------------------------------------------
-containerdeprierredupont:{
-padding:25,
 
-},
-pierreDupont:{
-  fontWeight:'bold',
-  fontSize:18,
-},
-descriptiondepostedeprierre:{
-  marginTop:7,
-  fontSize:10,
-},
-nomdepierre:{
-marginLeft:85,
-marginTop:12,
-  position:'absolute',
-},
-containerpierreleft:{},
-containerdeladressedepierre:{},
-imagedepierre:{
-  height:97,
-width:75,
-},
 
-//--------------------------------------------------------------------page 1-----------------------------
   page: {
     flexDirection: 'row',
     padding: 20,
   },
+  projectInfo: {
+    flex: 1, 
+    paddingTop:10,
+  },
+  projectDescription: {
+  padding:12,
+    flex: 2, 
+  },
+  projectContainer: {
+    flexDirection: 'row', 
+    justifyContent: 'space-between', 
+  },
+  containers: {
+    flex: 1,
+    padding: 6,
+  },
+row:{
+  paddingTop:12,
+},
+  rowContainer: {
+    paddingTop:12,
+    flexDirection: 'row', // Align children side by side
+    justifyContent: 'space-between', // Distribute space between left and right containers
+  },
+
+  texts: {
+    margin:12,
+    fontSize: 10,
+    marginBottom: 8,
+  },
+  josue: {
+    margin:12,
+    fontSize: 10,
+    marginBottom: 8,
+  },
   descriptionduprojectdeuxpigesdescription: {
-    position: "absolute",
-    marginTop: 59,
-    fontSize: 8,
+  paddingTop: 13,
+    fontSize: 12,
     marginLeft: 63,
   },
   descriptionduprojectdeuxpiges: {
-    position: "absolute",
-    marginTop: 40,
-    fontSize: 8,
+    fontSize: 12,
     marginLeft: 63,
   },
   descriptionduprojectdeux: {
     position: "absolute",
-    marginTop: 24,
-    fontSize: 8,
+  paddingTop: 24,
+  fontSize: 12,
     marginLeft: 63,
   },
   descriptionduproject: {
     position: "absolute",
-    marginTop: 8,
-    fontSize: 8,
+  paddingTop: 8,
+  fontSize: 12,
     marginLeft: 63,
   },
   anneedeprojetdeux: {
-    marginTop: 24,
-    fontSize: 8,
+   paddingTop:30,
+  fontSize: 12,
     marginLeft: 13,
   },
   projet: {
@@ -246,8 +253,8 @@ width:75,
     paddingBottom:15,
   },
   linedeprojectpersonnel: {
-    marginTop: 10,
-    marginLeft: 20,
+  marginTop: 20,
+  marginLeft:23,
     width: '90%',
     borderTopWidth: 2,
     borderTopColor: 'violet',
@@ -255,88 +262,88 @@ width:75,
   aujourdhuit: {
     position: "absolute",
     fontSize: 9,
-    marginTop: 10,
+  paddingTop: 10,
     marginLeft: 258,
   },
   anneedetravails: {
     position: "absolute",
     fontSize: 9,
-    marginTop: 10,
+  paddingTop: 10,
     marginLeft: 306,
   },
   conseildigital: {
-    marginTop: 16,
+  paddingTop: 16,
     marginLeft: 10,
   },
   hachaton: {
-    marginTop: 16,
+  paddingTop: 16,
     marginLeft: 10,
   },
   anneedeprojet: {
-    marginTop: 9,
-    fontSize: 8,
+  paddingTop: 9,
+  fontSize: 12,
     marginLeft: 13,
   },
   conseiltextgris: {
-    marginTop: 9,
+  paddingTop: 9,
     fontSize: 8,
     marginLeft: 13,
   },
   conseiltext: {
-    marginTop: 9,
+  paddingTop: 9,
     fontSize: 8,
     marginLeft: 13,
   },
   formationdeparicipants: {
-    marginTop: 9,
+  paddingTop: 9,
     fontSize: 8,
     marginLeft: 13,
   },
   emploiesdefinition: {
-    marginTop: 9,
+  paddingTop: 9,
     fontSize: 8,
     marginLeft: 13,
 
 
   },
   stagiaire: {
-    marginTop: 23,
+  paddingTop: 23,
     marginLeft: 11,
   },
   anneetafs: {
     position: "absolute",
-    marginTop: 406,
+  paddingTop: 406,
     marginLeft: 183,
   },
   anneetaf: {
     position: "absolute",
-    marginTop: 316,
+  paddingTop: 316,
     marginLeft: 183,
 
   },
   anneedemploies: {
-    marginTop: 35,
+  paddingTop: 35,
     position: 'relative',
     fontSize: 9,
     marginLeft: 134,
   },
   emploies: {
     marginLeft: 43,
-    marginTop: 5,
+  paddingTop: 5,
     fontSize: 8,
   },
   coach: {
     marginLeft: 43,
-    marginTop: 15,
+  paddingTop: 15,
     fontSize: 10,
   },
   experience: {
-    marginTop: 12,
+  paddingTop: 12,
     marginLeft: 11,
   },
   genielogiciel: {
     fontSize: 8,
-    marginTop: 38,
+  paddingTop: 38,
     marginLeft: 115,
   },
   nptics: {
@@ -346,22 +353,20 @@ width:75,
   },
   mptic: {
     position: 'absolute',
-    marginTop: 243,
+  paddingTop: 243,
     marginLeft: 116,
   },
   anneedeformationdeux: {
     fontSize: 9,
-    marginTop: 8,
+  paddingTop: 8,
     marginLeft: 13,
   },
   ecoledeformation: {
     position: "relative",
     marginRight: 200,
-    marginTop: 2,
+  paddingTop: 2,
   },
-  containers: {
-    flexDirection: 'row',
-  },
+ 
   sujetdeformation: {
     position: "absolute",
     marginRight: 179,
@@ -370,16 +375,27 @@ width:75,
   anneedeformation2: {
     marginLeft: 48,
     fontSize: 9,
-    marginTop: 26,
+  paddingTop: 26,
   },
   anneedeformation1: {
     marginLeft: 48,
     fontSize: 9,
-    marginTop: 10,
+  paddingTop: 10,
+  },
+  formations:{
+    paddingTop: 112,
+    marginLeft: 15,
+  },
+    blueLine: {
+    width: '100%',
+    borderBottomWidth: 1,
+    borderBottomColor: 'blue',
+    marginTop: 2,
+    marginBottom: 6,
   },
   formation: {
 
-    marginTop: 112,
+  paddingTop: 112,
     marginLeft: 15,
   },
   container: {
@@ -388,23 +404,24 @@ width:75,
     fontSize: 11,
     marginLeft: 17,
     position: "absolute",
-    marginTop: 118,
+  paddingTop: 113,
+  paddingBottom:32,
 
   },
   profil: {
     position: "absolute",
-    marginTop: 104,
+  paddingTop: 104,
     marginLeft: 17,
   },
   name: {
     position: 'absolute',
-    marginTop: 12,
+  paddingTop: 12,
     marginLeft: 73,
 
   },
   names: {
     position: 'absolute',
-    marginTop: 40,
+  paddingTop: 40,
     fontSize: 12,
     marginLeft: 27,
 
@@ -412,15 +429,10 @@ width:75,
   },
   langue: {
     alignItems: 'flex-start',
-    marginBottom: 10,
+  paddingRight:34,
   },
 
-  rowContainer: {
-
-    flexDirection: 'row',
-    alignItems: 'center',
-    paddingHorizontal: 20,
-  },
+ 
   leftColumn: {
     flex: 1,
     paddingRight: 10,
@@ -438,14 +450,9 @@ width:75,
     marginBottom: 10,
     marginHorizontal: 12,
   },
-  positions: {
-    position: "absolute",
-    marginTop: 47,
-    width: 234,
-    marginLeft: 185,
-  },
+ 
   espace: {
-    marginTop: 3,
+  paddingTop: 3,
     height: 12,
     width: 12,
     position: "absolute",
@@ -460,15 +467,15 @@ width:75,
   competences: {
     display: 'flex',
     fontSize: 7,
-    marginTop: 6,
+  paddingTop: 6,
     fontWeight: 'bold',
     marginRight: 69,
     marginBottom: 5,
   },
   progressBar: {
-    position: 'absolute',
-    height: 4,
-    marginTop: 3,
+    display:"flex",
+    justifyContent:"center",
+    height: 12,
     width: 69,
     marginRight: 99,
     backgroundColor: '#c7c6c6',
@@ -498,17 +505,12 @@ width:75,
     marginLeft: -7,
   },
 
-  position: {
-    position: "absolute",
-    marginTop: 12,
-    marginLeft: 94,
-  },
 
 
 
 
   enbasdelabarreviolet: {
-    marginTop: 23,
+  paddingTop: 23,
     marginLeft: 33,
   },
 
@@ -519,32 +521,18 @@ width:75,
   },
 
   rest: {
-    marginTop: 22,
+  paddingTop: 22,
     fontSize: 8,
   },
-  blueLine: {
-    width: '60%',
-    position: 'absolute',
-    borderBottomWidth: 3,
-    borderBottomColor: 'white',
-    marginTop: 3,
-    marginLeft: 54,
-  },
-  blueLines: {
-    width: '40%',
-    position: 'absolute',
-    borderBottomWidth: 3,
-    borderBottomColor: 'blue',
-    marginTop: 3,
-    marginLeft: 54,
-  },
+
+ 
 
   columnContainer: {
     flexDirection: 'column',
-    marginTop: 12,
+  paddingTop: 12,
   },
   linedeexperienceprofessionnelle: {
-    marginTop: 8,
+  marginTop:12,
     marginLeft: 26,
     width: '90%',
     borderTopWidth: 2,
@@ -553,32 +541,22 @@ width:75,
 
   line: {
     padding:5,
-    marginTop: 4,
+  paddingTop: 4,
     marginLeft: 13,
     width: '100%',
     borderTopWidth: 2,
     borderTopColor: 'violet',
   },
-  linestyles: {
 
-    position: "relative",
-    marginTop: 83,
-    marginLeft: 13,
-    width: '100%',
-    borderTopWidth: 8,
-    borderTopColor: 'violet',
-  },
   linestyle: {
-    position: "absolute",
-
-    marginTop: 870,
+  position:"absolute",
     marginLeft: 19,
     width: '100%',
     borderTopWidth: 8,
     borderTopColor: 'violet',
   },
   lines: {
-    marginTop: 48,
+  paddingTop: 48,
     marginLeft: 28,
     width: '91%',
     borderTopWidth: 2,
@@ -594,68 +572,66 @@ width:75,
   },
 
   donne: {
-    marginTop: 5,
+  paddingTop: 5,
     marginLeft: 34,
     fontSize: 8,
   },
   textsDesannee: {
     position: "relative",
-    marginTop: 5,
+  paddingTop: 5,
     marginLeft: 209,
     fontSize: 8,
   },
 
   josues: {
-    marginTop: 15,
+  paddingTop: 15,
     fontSize: 7,
     marginLeft: 8,
   },
-  josue: {
-    margin: 8,
+ 
+  textnfo:{
+    paddingBottom:7,
+    paddingTop: 14,
     fontSize: 8,
+    marginLeft: 13,
   },
   textinfos: {
     paddingBottom:7,
-    marginTop: 6,
+  paddingTop: 6,
     fontSize: 8,
     marginLeft: 13,
   },
   contact: {
-    marginTop: 10,
+  paddingTop: 10,
     fontSize: 8,
     marginLeft: 12,
 
   },
   textinfo: {
-    marginTop: 9,
+  paddingTop: 9,
     fontSize: 10,
     marginLeft: 13,
   },
-  texts: {
-    marginTop: 5,
-    margin: 9,
-    fontSize: 8,
-
-  },
+ 
   text: {
-    marginTop: 12,
+  paddingTop: 15,
     marginLeft: 14,
     fontSize: 8,
 
   },
   textlorem: {
-    marginTop: 3,
+  paddingTop: 3,
     margin: 8,
     fontSize: 8,
   },
   infopresonnel:{
-    marginTop: 5,
+  paddingTop: 5,
     color: 'violet',
     marginLeft: 10 ,
     fontSize: 8,
   },
   info: {
-    marginTop: 5,
+  paddingTop: 5,
     color: 'violet',
     marginLeft: 14,
     fontSize: 8,
@@ -686,17 +662,8 @@ width:75,
     width: '30%',
     paddingLeft: 10,
   },
-  languageLeft: {
-    marginTop: 7,
-    marginLeft: 6,
-  },
+ 
 
-  languageRight: {
-    position: "absolute",
-    marginTop: 25,
-    marginLeft: 83,
-  },
-  //--------------------------------------------------------------------page 1-----------------------------
 });
 
 export default Pdf;
