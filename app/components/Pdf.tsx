@@ -13,8 +13,8 @@ const Pdf = () => (
   <View style={styles.lefts}> 
     <Image src={image} style={styles.image}/>
     <View style={styles.padding}>
-    <Text style={styles.text}>Pierre Dupont</Text>
-    <Text style={styles.text}> Adjointe administrative</Text>
+    <Text style={styles.tet}>Pierre Dupont</Text>
+    <Text style={styles.text}>Adjointe administrative</Text>
     </View>
   </View>
   <View style={styles.right}>
@@ -181,7 +181,7 @@ marginTop:14,
   },
   textdefin:{
     fontSize:12,
-   paddingTop:6,
+   paddingTop:10,
   }
   ,
   text2:{
@@ -192,6 +192,10 @@ marginTop:14,
   textAlign:'left',
     fontSize:12,
   },
+  tet:{
+    textAlign:'left',
+      fontSize:22,
+    },
   containeright:{
     paddingTop:10,
    paddingLeft:100,
@@ -220,8 +224,8 @@ lefts:{
     flexDirection:'row',
 
   },containers:{
-
     display:'flex',
+    justifyContent:"space-around",
     flexDirection:'row',
   }
 
