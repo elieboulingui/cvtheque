@@ -110,13 +110,13 @@ const Pdf = () => (
 
           <View style={styles.row}>
             <View style={styles.lefts}>
-              <Text style={styles.texts}><Image src={point} style={styles.point} />"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </Text>
-              <Text style={styles.texts}><Image src={point} style={styles.point} />"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </Text>
+              <Text style={styles.textsi}><Image src={point} style={styles.point} /> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </Text>
+              <Text style={styles.textsi}><Image src={point} style={styles.point} /> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </Text>
 
             </View>
             <View style={styles.rights}>
-              <Text style={styles.texts}><Image src={point} style={styles.point} />"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </Text>
-              <Text style={styles.texts}><Image src={point} style={styles.point} />"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </Text>
+              <Text style={styles.textsi}><Image src={point} style={styles.point} /> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </Text>
+              <Text style={styles.textsi}><Image src={point} style={styles.point} /> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </Text>
 
             </View>
 
@@ -133,11 +133,11 @@ const Pdf = () => (
             <View style={styles.linedeprojectpersonnel}></View>
             <View style={styles.containers}>
               <View style={styles.lefts}>
-                <Text style={styles.texts}><Image src={point} style={styles.point} />"Lorem ipsum dolor sit amet, </Text>
-                <Text style={styles.texts}><Image src={point} style={styles.point} />"Lorem ipsum dolor sit amet, </Text>
-                <Text style={styles.texts}><Image src={point} style={styles.point} />"Lorem ipsum dolor sit amet, </Text>
-                <Text style={styles.texts}><Image src={point} style={styles.point} />"Lorem ipsum dolor sit amet, </Text>
-                <Text style={styles.texts}><Image src={point} style={styles.point} />"Lorem ipsum dolor sit amet, </Text>
+                <Text style={styles.texts}><Image src={point} style={styles.point} /> "Lorem ipsum dolor sit amet, </Text>
+                <Text style={styles.texts}><Image src={point} style={styles.point} /> "Lorem ipsum dolor sit amet, </Text>
+                <Text style={styles.texts}><Image src={point} style={styles.point} /> "Lorem ipsum dolor sit amet, </Text>
+                <Text style={styles.texts}><Image src={point} style={styles.point} /> "Lorem ipsum dolor sit amet, </Text>
+                <Text style={styles.texts}><Image src={point} style={styles.point} /> "Lorem ipsum dolor sit amet, </Text>
               </View>
               {/* Ajoutez d'autres éléments si nécessaire */}
             </View>
@@ -186,8 +186,8 @@ const styles = StyleSheet.create({
   },
   point: {
     paddingLeft: 5,
-    height: 2,
-    width: 2,
+    height: 3,
+    width: 3,
   },
   textcomplete: {
     width:"60%",
