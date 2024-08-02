@@ -20,7 +20,7 @@ const Pdf = () => (
           <View style={styles.colomn}>
             <Image src={image} style={styles.image} />
             <View style={styles.description}>
-              <Text style={styles.text}>GILBERT PHILIPPE</Text>
+              <Text style={styles.name}>GILBERT PHILIPPE</Text>
               <Text style={styles.directiion}>Directeur comptable</Text>
             </View>
           </View>
@@ -48,7 +48,11 @@ const Pdf = () => (
           <View style={styles.objectif}><Text style={styles.text}>OBJECTIF</Text></View>
           <View style={styles.linedeprojectpersonnel}></View>
           <View style={styles.tableau}>
-            <Text style={styles.textcontact}>Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</Text>
+            <Text style={styles.textcontact}>Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
+            Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
+            Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
+
+            </Text>
           </View>
         </View>
       </View>
@@ -74,13 +78,13 @@ const Pdf = () => (
         </View>
         <View style={styles.row}>
           <View style={styles.lefts}>
-            <Text style={styles.texts}><Image src={point} style={styles.point} />"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </Text>
-            <Text style={styles.texts}><Image src={point} style={styles.point} />"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </Text>
+            <Text style={styles.textsi}><Image src={point} style={styles.point} />"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </Text>
+            <Text style={styles.textsi}><Image src={point} style={styles.point} />"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </Text>
 
           </View>
           <View style={styles.rights}>
-            <Text style={styles.texts}><Image src={point} style={styles.point} />"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </Text>
-            <Text style={styles.texts}><Image src={point} style={styles.point} />"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </Text>
+            <Text style={styles.textsi}><Image src={point} style={styles.point} />"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </Text>
+            <Text style={styles.textsi}><Image src={point} style={styles.point} />"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </Text>
 
           </View></View>
         {/*  experience */}
@@ -124,7 +128,7 @@ const Pdf = () => (
           {/* Partie gauche */}
           <View style={{ flex: 1, paddingRight: 5 }}>
             <View style={styles.textContainer}>
-              <Text style={styles.text}>EXPERIENCE</Text>
+              <Text style={styles.text}>competences</Text>
             </View>
             <View style={styles.linedeprojectpersonnel}></View>
             <View style={styles.containers}>
@@ -143,7 +147,7 @@ const Pdf = () => (
           <View style={{ flex: 1, paddingLeft: 5 }}>
             {/* Premier conteneur en haut */}
             <View style={styles.textContainer}>
-              <Text style={styles.text}>EXPERIENCE</Text>
+              <Text style={styles.text}>langues</Text>
             </View>
             <View style={styles.linedeprojectpersonnel}></View>
             <View style={styles.containers}>
@@ -157,8 +161,9 @@ const Pdf = () => (
               </View>
             </View>
             <View style={styles.lfts}>
-            <Text style={styles.texts}>francais</Text>
-            <Text style={styles.texts}>native</Text>
+            <Text style={styles.texts}>Anglais</Text>
+            <Text style={styles.textcomplete}>Competence professionnelle complete</Text>
+            <Text style={styles.texts}></Text>
           </View>
           </View>
         </View>
@@ -181,8 +186,16 @@ const styles = StyleSheet.create({
   },
   point: {
     paddingLeft: 5,
-    height: 5,
-    width: 5,
+    height: 2,
+    width: 2,
+  },
+  textcomplete: {
+    width:"60%",
+    fontSize: 10,
+  },
+  textsi:{
+    paddingLeft:12,
+    fontSize: 12,
   },
   texts: {
     fontSize: 12,
@@ -199,7 +212,7 @@ const styles = StyleSheet.create({
     paddingTop: 13,
   },
   tableau: {
-    paddingTop: 12,
+    paddingTop: 2,
     height: 100,
     width: "42%"
   },
@@ -222,14 +235,20 @@ const styles = StyleSheet.create({
     fontSize:"10",
     color: "blue",
   },
+  name: {
+    paddingTop: 9,
+    fontSize:45,
+    color: "blue",
+  },
   text: {
+    textTransform:"uppercase",
     paddingTop: 9,
     color: "blue",
   },
 
   image: {
-   height:"70%",
-   width:'80%',
+   height:"40%",
+   width:'100%',
   },
   colomn: {
 
