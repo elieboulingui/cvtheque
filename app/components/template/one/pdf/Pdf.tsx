@@ -12,8 +12,8 @@ Font.register({
 });
 
 // Define your image path
-const image = '/image/abit.jpg';
-const point = '/image/e.jpg';
+const image = '/image/BD8Rb_5f.jpg';
+const point = '/image/BD8Rb_5f.jpg';
 
 const Pdf = () => (
   <Document>
@@ -176,7 +176,7 @@ const Pdf = () => (
     </View>
       {/* Ajoute d'autres éléments ici si nécessaire */}
       {/*  experience */}
-      <View style={{ flexDirection: 'row', flex: 1 }}>
+      <View style={{ flexDirection: 'row', flex: 1 , justifyContent:'space-between' }}>
         {/* Partie gauche */}
         <View style={{ flex: 1, paddingRight: 5 }}>
           <View >
@@ -247,10 +247,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'blue',
 
   },
-  rows: {
-  display:"flex",
-  justifyContent:"space-between",
-  },
+
   row: {
     flexDirection: 'row',
     flexWrap: 'wrap',
@@ -287,7 +284,7 @@ const styles = StyleSheet.create({
     padding: 10,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#ddd',
+
     borderWidth: 1,
     borderColor: '#000',
     boxSizing: 'border-box', // Assure que le padding et la bordure sont inclus dans la largeur
