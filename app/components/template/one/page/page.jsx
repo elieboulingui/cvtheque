@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from "./image/abit.jpg"; // Replace with your actual image import
+import Image from "../image/abit.jpg"; // Replace with your actual image import
 
 
 const Pdf = () => (

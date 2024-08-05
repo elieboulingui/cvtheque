@@ -13,7 +13,7 @@ Font.register({
 
 // Define your image path
 const image = '/image/BD8Rb_5f.jpg';
-const point = '/image/BD8Rb_5f.jpg';
+const point = '/image/abit.jpg';
 
 const Pdf = () => (
   <Document>
